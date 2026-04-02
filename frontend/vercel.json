@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd frontend && npx vite build",
+  "outputDirectory": "frontend/dist"
+}
