@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: inovice-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: ~20.0.0
+      - key: VITE_API_BASE_URL
+        value: REPLACE_WITH_YOUR_VERCEL_BACKEND_URL # e.g., https://your-backend.vercel.app
